@@ -1,1 +1,2 @@
-# DIP1_IS_Bacalso
+# Digital Image Processing
+### by Sly Kint A. Bacalso
