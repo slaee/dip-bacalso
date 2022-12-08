@@ -13,7 +13,7 @@ namespace DIP1_IS_Bacalso
 {
     public partial class Form1 : Form
     {
-        Bitmap loaded, processed, imageA, imageB;
+        Bitmap loaded, processed, imageA, imageB, colorGreen;
         
         public Form1()
         {
@@ -111,6 +111,11 @@ namespace DIP1_IS_Bacalso
         {
             imageB = new Bitmap(openFileDialog3.FileName);
             ImageB.Image = imageB;
+        }
+
+        private void saveToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+
         }
 
         private void sepiaToolStripMenuItem_Click(object sender, EventArgs e)
