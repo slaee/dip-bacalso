@@ -34,6 +34,20 @@ namespace DIP1_IS_Bacalso
             saveFileDialog1.ShowDialog();
         }
 
+        private void copyToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            processed = new Bitmap(loaded.Width, loaded.Height);
+            for(int x = 0; x < loaded.Width; x++)
+            {
+                for (int y = 0; y < loaded.Height; y++)
+                {
+                    Color copyPixel = loaded.GetPixel(x, y);
+                    processed.SetPixel(x, y, copyPixel);
+                }
+            }
+            ProcessedImage.Image = processed;
+        }
+
         private void openFileDialog1_FileOk(object sender, CancelEventArgs e)
         {
             loaded = new Bitmap(openFileDialog1.FileName);
