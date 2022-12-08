@@ -1,19 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.Drawing.Imaging;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace DIP1_IS_Bacalso
 {
     public partial class Form1 : Form
     {
-        Bitmap loaded, processed, imageA, imageB, colorGreen;
+        Bitmap loaded, processed, imageA, imageB;
         
         public Form1()
         {
