@@ -30,6 +30,8 @@
         {
             this.tabPage = new System.Windows.Forms.TabControl();
             this.dip_1 = new System.Windows.Forms.TabPage();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.ProcessedImage = new System.Windows.Forms.PictureBox();
             this.InputImage = new System.Windows.Forms.PictureBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
@@ -45,8 +47,6 @@
             this.dip_2 = new System.Windows.Forms.TabPage();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.tabPage.SuspendLayout();
             this.dip_1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ProcessedImage)).BeginInit();
@@ -78,6 +78,24 @@
             this.dip_1.TabIndex = 0;
             this.dip_1.Text = "DIP1";
             this.dip_1.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(243, 409);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(31, 13);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Input";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(686, 409);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(39, 13);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Output";
             // 
             // ProcessedImage
             // 
@@ -146,35 +164,35 @@
             // copyToolStripMenuItem
             // 
             this.copyToolStripMenuItem.Name = "copyToolStripMenuItem";
-            this.copyToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.copyToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
             this.copyToolStripMenuItem.Text = "Copy";
             this.copyToolStripMenuItem.Click += new System.EventHandler(this.copyToolStripMenuItem_Click);
             // 
             // greyscaleToolStripMenuItem
             // 
             this.greyscaleToolStripMenuItem.Name = "greyscaleToolStripMenuItem";
-            this.greyscaleToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.greyscaleToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
             this.greyscaleToolStripMenuItem.Text = "Greyscale";
             this.greyscaleToolStripMenuItem.Click += new System.EventHandler(this.greyscaleToolStripMenuItem_Click);
             // 
             // invertToolStripMenuItem
             // 
             this.invertToolStripMenuItem.Name = "invertToolStripMenuItem";
-            this.invertToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.invertToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
             this.invertToolStripMenuItem.Text = "Invert";
             this.invertToolStripMenuItem.Click += new System.EventHandler(this.invertToolStripMenuItem_Click);
             // 
             // histogramToolStripMenuItem
             // 
             this.histogramToolStripMenuItem.Name = "histogramToolStripMenuItem";
-            this.histogramToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.histogramToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
             this.histogramToolStripMenuItem.Text = "Histogram";
             this.histogramToolStripMenuItem.Click += new System.EventHandler(this.histogramToolStripMenuItem_Click);
             // 
             // sepiaToolStripMenuItem
             // 
             this.sepiaToolStripMenuItem.Name = "sepiaToolStripMenuItem";
-            this.sepiaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.sepiaToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
             this.sepiaToolStripMenuItem.Text = "Sepia";
             this.sepiaToolStripMenuItem.Click += new System.EventHandler(this.sepiaToolStripMenuItem_Click);
             // 
@@ -193,23 +211,9 @@
             this.openFileDialog1.FileName = "openFileDialog1";
             this.openFileDialog1.FileOk += new System.ComponentModel.CancelEventHandler(this.openFileDialog1_FileOk);
             // 
-            // label2
+            // saveFileDialog1
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(686, 409);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(39, 13);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Output";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(243, 409);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(31, 13);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "Input";
+            this.saveFileDialog1.FileOk += new System.ComponentModel.CancelEventHandler(this.saveFileDialog1_FileOk);
             // 
             // Form1
             // 

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Imaging;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -123,6 +124,15 @@ namespace DIP1_IS_Bacalso
                 }
             }
             ProcessedImage.Image = processed;
+        }
+
+        private void saveFileDialog1_FileOk(object sender, CancelEventArgs e)
+        {
+            using (Graphics g = Graphics.FromImage(processed))
+            {
+                g.DrawImage(processed, new Rectangle(0, 0, processed.Width, processed.Height));
+                processed.Save(saveFileDialog1.FileName, ImageFormat.Jpeg);
+            }
         }
 
         private static void Histogram(ref Bitmap a, ref Bitmap b)
