@@ -49,7 +49,6 @@
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.menuStrip2 = new System.Windows.Forms.MenuStrip();
             this.saveToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.subtractToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ImageA = new System.Windows.Forms.PictureBox();
             this.ImageB = new System.Windows.Forms.PictureBox();
             this.subtractedImage = new System.Windows.Forms.PictureBox();
@@ -57,6 +56,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.openFileDialog2 = new System.Windows.Forms.OpenFileDialog();
             this.openFileDialog3 = new System.Windows.Forms.OpenFileDialog();
+            this.button3 = new System.Windows.Forms.Button();
             this.tabPage.SuspendLayout();
             this.dip_1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ProcessedImage)).BeginInit();
@@ -213,6 +213,7 @@
             // 
             // dip_2
             // 
+            this.dip_2.Controls.Add(this.button3);
             this.dip_2.Controls.Add(this.button2);
             this.dip_2.Controls.Add(this.button1);
             this.dip_2.Controls.Add(this.subtractedImage);
@@ -239,8 +240,7 @@
             // menuStrip2
             // 
             this.menuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.saveToolStripMenuItem1,
-            this.subtractToolStripMenuItem});
+            this.saveToolStripMenuItem1});
             this.menuStrip2.Location = new System.Drawing.Point(3, 3);
             this.menuStrip2.Name = "menuStrip2";
             this.menuStrip2.Size = new System.Drawing.Size(963, 24);
@@ -253,12 +253,6 @@
             this.saveToolStripMenuItem1.Size = new System.Drawing.Size(43, 20);
             this.saveToolStripMenuItem1.Text = "Save";
             this.saveToolStripMenuItem1.Click += new System.EventHandler(this.saveToolStripMenuItem1_Click);
-            // 
-            // subtractToolStripMenuItem
-            // 
-            this.subtractToolStripMenuItem.Name = "subtractToolStripMenuItem";
-            this.subtractToolStripMenuItem.Size = new System.Drawing.Size(63, 20);
-            this.subtractToolStripMenuItem.Text = "Subtract";
             // 
             // ImageA
             // 
@@ -317,6 +311,16 @@
             this.openFileDialog3.FileName = "openFileDialog3";
             this.openFileDialog3.FileOk += new System.ComponentModel.CancelEventHandler(this.openFileDialog3_FileOk);
             // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(767, 333);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.TabIndex = 6;
+            this.button3.Text = "Subtract";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -369,13 +373,13 @@
         private System.Windows.Forms.PictureBox ImageA;
         private System.Windows.Forms.MenuStrip menuStrip2;
         private System.Windows.Forms.ToolStripMenuItem saveToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem subtractToolStripMenuItem;
         private System.Windows.Forms.PictureBox ImageB;
         private System.Windows.Forms.PictureBox subtractedImage;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.OpenFileDialog openFileDialog2;
         private System.Windows.Forms.OpenFileDialog openFileDialog3;
+        private System.Windows.Forms.Button button3;
     }
 }
 

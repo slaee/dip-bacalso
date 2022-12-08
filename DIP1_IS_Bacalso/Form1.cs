@@ -113,6 +113,34 @@ namespace DIP1_IS_Bacalso
             ImageB.Image = imageB;
         }
 
+        private void button3_Click(object sender, EventArgs e)
+        {
+            processed = new Bitmap(imageB.Width, imageB.Height);
+
+            Color myGreen = Color.FromArgb(0, 255, 0);
+            int greyGreen = (myGreen.R + myGreen.G + myGreen.B) / 3;
+            int threshold = 5;
+
+            for(int x = 0; x < imageB.Width; x++)
+            {
+                for(int y = 0; y < imageB.Height; y++)
+                {
+                    Color pixel = imageA.GetPixel(x, y);
+                    Color backPixel = imageB.GetPixel(x, y);
+
+                    int grey = (pixel.R + pixel.G + pixel.B) / 3;
+                    int subtractedValue = Math.Abs(grey - greyGreen);
+
+                    if (subtractedValue < threshold)
+                        processed.SetPixel(x, y, backPixel);
+                    else
+                        processed.SetPixel(x, y, pixel);
+                }
+            }
+
+            subtractedImage.Image = processed;
+        }
+
         private void saveToolStripMenuItem1_Click(object sender, EventArgs e)
         {
 
