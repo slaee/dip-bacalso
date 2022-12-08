@@ -47,6 +47,9 @@
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.brightnessToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.equalizationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.brightnessLevel = new System.Windows.Forms.ToolStripTextBox();
             this.tabPage.SuspendLayout();
             this.dip_1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ProcessedImage)).BeginInit();
@@ -166,6 +169,9 @@
             // 
             // histogramToolStripMenuItem
             // 
+            this.histogramToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.brightnessToolStripMenuItem,
+            this.equalizationToolStripMenuItem});
             this.histogramToolStripMenuItem.Name = "histogramToolStripMenuItem";
             this.histogramToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.histogramToolStripMenuItem.Text = "Histogram";
@@ -173,7 +179,7 @@
             // sepiaToolStripMenuItem
             // 
             this.sepiaToolStripMenuItem.Name = "sepiaToolStripMenuItem";
-            this.sepiaToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
+            this.sepiaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.sepiaToolStripMenuItem.Text = "Sepia";
             // 
             // dip_2
@@ -208,6 +214,27 @@
             this.label1.Size = new System.Drawing.Size(31, 13);
             this.label1.TabIndex = 5;
             this.label1.Text = "Input";
+            // 
+            // brightnessToolStripMenuItem
+            // 
+            this.brightnessToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.brightnessLevel});
+            this.brightnessToolStripMenuItem.Name = "brightnessToolStripMenuItem";
+            this.brightnessToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.brightnessToolStripMenuItem.Text = "Brightness";
+            // 
+            // equalizationToolStripMenuItem
+            // 
+            this.equalizationToolStripMenuItem.Name = "equalizationToolStripMenuItem";
+            this.equalizationToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.equalizationToolStripMenuItem.Text = "Contrast";
+            // 
+            // brightnessLevel
+            // 
+            this.brightnessLevel.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.brightnessLevel.Name = "brightnessLevel";
+            this.brightnessLevel.Size = new System.Drawing.Size(100, 23);
+            this.brightnessLevel.KeyDown += new System.Windows.Forms.KeyEventHandler(this.brightnessLevel_KeyDown);
             // 
             // Form1
             // 
@@ -250,6 +277,9 @@
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ToolStripMenuItem brightnessToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem equalizationToolStripMenuItem;
+        private System.Windows.Forms.ToolStripTextBox brightnessLevel;
     }
 }
 
