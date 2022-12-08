@@ -63,6 +63,20 @@ namespace DIP1_IS_Bacalso
             ProcessedImage.Image = processed;
         }
 
+        private void invertToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            processed = new Bitmap(loaded.Width, loaded.Height);
+            for (int x = 0; x < loaded.Width; x++)
+            {
+                for (int y = 0; y < loaded.Height; y++)
+                {
+                    Color copyPixel = loaded.GetPixel(x, y);
+                    processed.SetPixel(x, y, Color.FromArgb((255 - copyPixel.R), (255 - copyPixel.G), (255 - copyPixel.B)));
+                }
+            }
+            ProcessedImage.Image = processed;
+        }
+
         private void openFileDialog1_FileOk(object sender, CancelEventArgs e)
         {
             loaded = new Bitmap(openFileDialog1.FileName);
