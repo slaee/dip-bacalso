@@ -13,7 +13,7 @@ namespace DIP1_IS_Bacalso
 {
     public partial class Form1 : Form
     {
-        Bitmap loaded, processed;
+        Bitmap loaded, processed, imageA, imageB;
         
         public Form1()
         {
@@ -89,6 +89,28 @@ namespace DIP1_IS_Bacalso
         {
             Histogram(ref loaded, ref processed);
             ProcessedImage.Image = processed;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            openFileDialog2.ShowDialog();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            openFileDialog3.ShowDialog();
+        }
+
+        private void openFileDialog2_FileOk(object sender, CancelEventArgs e)
+        {
+            imageA = new Bitmap(openFileDialog2.FileName);
+            ImageA.Image = imageA;
+        }
+
+        private void openFileDialog3_FileOk(object sender, CancelEventArgs e)
+        {
+            imageB = new Bitmap(openFileDialog3.FileName);
+            ImageB.Image = imageB;
         }
 
         private void sepiaToolStripMenuItem_Click(object sender, EventArgs e)
