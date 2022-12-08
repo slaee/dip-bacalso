@@ -47,11 +47,22 @@
             this.dip_2 = new System.Windows.Forms.TabPage();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
+            this.menuStrip2 = new System.Windows.Forms.MenuStrip();
+            this.saveToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.subtractToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.imageA = new System.Windows.Forms.PictureBox();
+            this.imageB = new System.Windows.Forms.PictureBox();
+            this.subtractedImage = new System.Windows.Forms.PictureBox();
             this.tabPage.SuspendLayout();
             this.dip_1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ProcessedImage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.InputImage)).BeginInit();
             this.menuStrip1.SuspendLayout();
+            this.dip_2.SuspendLayout();
+            this.menuStrip2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.imageA)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imageB)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.subtractedImage)).BeginInit();
             this.SuspendLayout();
             // 
             // tabPage
@@ -198,6 +209,10 @@
             // 
             // dip_2
             // 
+            this.dip_2.Controls.Add(this.subtractedImage);
+            this.dip_2.Controls.Add(this.imageB);
+            this.dip_2.Controls.Add(this.imageA);
+            this.dip_2.Controls.Add(this.menuStrip2);
             this.dip_2.Location = new System.Drawing.Point(4, 22);
             this.dip_2.Name = "dip_2";
             this.dip_2.Padding = new System.Windows.Forms.Padding(3);
@@ -215,12 +230,63 @@
             // 
             this.saveFileDialog1.FileOk += new System.ComponentModel.CancelEventHandler(this.saveFileDialog1_FileOk);
             // 
+            // menuStrip2
+            // 
+            this.menuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.saveToolStripMenuItem1,
+            this.subtractToolStripMenuItem});
+            this.menuStrip2.Location = new System.Drawing.Point(3, 3);
+            this.menuStrip2.Name = "menuStrip2";
+            this.menuStrip2.Size = new System.Drawing.Size(963, 24);
+            this.menuStrip2.TabIndex = 0;
+            this.menuStrip2.Text = "menuStrip2";
+            // 
+            // saveToolStripMenuItem1
+            // 
+            this.saveToolStripMenuItem1.Name = "saveToolStripMenuItem1";
+            this.saveToolStripMenuItem1.Size = new System.Drawing.Size(43, 20);
+            this.saveToolStripMenuItem1.Text = "Save";
+            // 
+            // subtractToolStripMenuItem
+            // 
+            this.subtractToolStripMenuItem.Name = "subtractToolStripMenuItem";
+            this.subtractToolStripMenuItem.Size = new System.Drawing.Size(63, 20);
+            this.subtractToolStripMenuItem.Text = "Subtract";
+            // 
+            // imageA
+            // 
+            this.imageA.Location = new System.Drawing.Point(22, 65);
+            this.imageA.Name = "imageA";
+            this.imageA.Size = new System.Drawing.Size(280, 250);
+            this.imageA.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imageA.TabIndex = 1;
+            this.imageA.TabStop = false;
+            // 
+            // imageB
+            // 
+            this.imageB.Location = new System.Drawing.Point(347, 65);
+            this.imageB.Name = "imageB";
+            this.imageB.Size = new System.Drawing.Size(280, 250);
+            this.imageB.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imageB.TabIndex = 2;
+            this.imageB.TabStop = false;
+            // 
+            // subtractedImage
+            // 
+            this.subtractedImage.Location = new System.Drawing.Point(663, 65);
+            this.subtractedImage.Name = "subtractedImage";
+            this.subtractedImage.Size = new System.Drawing.Size(280, 250);
+            this.subtractedImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.subtractedImage.TabIndex = 3;
+            this.subtractedImage.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(976, 527);
             this.Controls.Add(this.tabPage);
+            this.MainMenuStrip = this.menuStrip2;
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -231,6 +297,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.InputImage)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            this.dip_2.ResumeLayout(false);
+            this.dip_2.PerformLayout();
+            this.menuStrip2.ResumeLayout(false);
+            this.menuStrip2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.imageA)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imageB)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.subtractedImage)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -256,6 +329,12 @@
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox imageA;
+        private System.Windows.Forms.MenuStrip menuStrip2;
+        private System.Windows.Forms.ToolStripMenuItem saveToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem subtractToolStripMenuItem;
+        private System.Windows.Forms.PictureBox imageB;
+        private System.Windows.Forms.PictureBox subtractedImage;
     }
 }
 
