@@ -57,6 +57,7 @@
             this.openFileDialog2 = new System.Windows.Forms.OpenFileDialog();
             this.openFileDialog3 = new System.Windows.Forms.OpenFileDialog();
             this.button3 = new System.Windows.Forms.Button();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage.SuspendLayout();
             this.dip_1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ProcessedImage)).BeginInit();
@@ -73,6 +74,7 @@
             // 
             this.tabPage.Controls.Add(this.dip_1);
             this.tabPage.Controls.Add(this.dip_2);
+            this.tabPage.Controls.Add(this.tabPage1);
             this.tabPage.Location = new System.Drawing.Point(0, 1);
             this.tabPage.Name = "tabPage";
             this.tabPage.SelectedIndex = 0;
@@ -321,6 +323,15 @@
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
+            // tabPage1
+            // 
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Size = new System.Drawing.Size(969, 500);
+            this.tabPage1.TabIndex = 2;
+            this.tabPage1.Text = "Camera Processing";
+            this.tabPage1.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -329,7 +340,7 @@
             this.Controls.Add(this.tabPage);
             this.MainMenuStrip = this.menuStrip2;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Digital Image Processing by Bacalso";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.tabPage.ResumeLayout(false);
             this.dip_1.ResumeLayout(false);
@@ -380,6 +391,7 @@
         private System.Windows.Forms.OpenFileDialog openFileDialog2;
         private System.Windows.Forms.OpenFileDialog openFileDialog3;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.TabPage tabPage1;
     }
 }
 

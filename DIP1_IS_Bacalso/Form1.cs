@@ -143,7 +143,7 @@ namespace DIP1_IS_Bacalso
 
         private void saveToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-
+            saveFileDialog1.ShowDialog();
         }
 
         private void sepiaToolStripMenuItem_Click(object sender, EventArgs e)
