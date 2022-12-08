@@ -84,6 +84,7 @@
             this.ProcessedImage.Location = new System.Drawing.Point(497, 91);
             this.ProcessedImage.Name = "ProcessedImage";
             this.ProcessedImage.Size = new System.Drawing.Size(400, 300);
+            this.ProcessedImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ProcessedImage.TabIndex = 2;
             this.ProcessedImage.TabStop = false;
             // 
@@ -92,6 +93,7 @@
             this.InputImage.Location = new System.Drawing.Point(64, 91);
             this.InputImage.Name = "InputImage";
             this.InputImage.Size = new System.Drawing.Size(400, 300);
+            this.InputImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.InputImage.TabIndex = 1;
             this.InputImage.TabStop = false;
             // 
@@ -184,6 +186,7 @@
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
+            this.openFileDialog1.FileOk += new System.ComponentModel.CancelEventHandler(this.openFileDialog1_FileOk);
             // 
             // label2
             // 

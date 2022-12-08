@@ -12,6 +12,8 @@ namespace DIP1_IS_Bacalso
 {
     public partial class Form1 : Form
     {
+        Bitmap loaded, processed;
+        
         public Form1()
         {
             InitializeComponent();
@@ -30,6 +32,12 @@ namespace DIP1_IS_Bacalso
         private void saveToolStripMenuItem_Click(object sender, EventArgs e)
         {
             saveFileDialog1.ShowDialog();
+        }
+
+        private void openFileDialog1_FileOk(object sender, CancelEventArgs e)
+        {
+            loaded = new Bitmap(openFileDialog1.FileName);
+            InputImage.Image = loaded;
         }
     }
 }
